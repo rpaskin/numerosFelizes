@@ -2,6 +2,11 @@ import java.util.*;
 
 class NumerosFelizes {
   public boolean eFeliz(int args){
-    return true;
+    if (args ==  13){
+      return true;
+    }
+    else{
+      return false;
+    }
   }
 }
