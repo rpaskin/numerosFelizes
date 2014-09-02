@@ -31,8 +31,8 @@ class NumerosFelizes {
   		ArrayList<Integer> resultado = new ArrayList<Integer>();
 
   		//ronnie não deixou colar
-  		for(int i = 0; i < args.length; i++){
-  			resultado.add(args[i]*args[i]);
+  		for(int i = 0; i < args.size(); i++){
+  			resultado.add(args.get(i)*args.get(i));
   		}
   		return resultado;
 
