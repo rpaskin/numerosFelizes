@@ -8,6 +8,8 @@ public class NumerosFelizesTestDrive {
       System.out.println(teste.eFeliz(3));
       System.out.println("\nTrue:");
       System.out.println(teste.eFeliz(10));
+      System.out.println("Deve retornar 1 e 1");
+      System.out.println(teste.separaNumero(11));
 
     }
 }
