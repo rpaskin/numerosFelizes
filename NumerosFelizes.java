@@ -1,13 +1,17 @@
 import java.util.*;
 
 class NumerosFelizes {
-  	public boolean eFeliz(int args){
-    	if (args ==  13 || args == 10){
-      		return true;
-    	}
-    	else{
-      		return false;
-    	}
+  	public boolean eFeliz(int args, int safe){
+  		if (safe > 100){
+  			return false;
+  		}
+
+  		int soma = somaTudo(aoQuadrado(separaNumero(args)));
+  		if (soma == 1){
+  			return true;
+  		}
+  		safe++;
+  		return eFeliz(soma, safe);
   	}
   	
 
@@ -48,7 +52,6 @@ class NumerosFelizes {
   			somatorio = somatorio + args.get(i);
   		}
   		return somatorio;
-
   	}
 
 }
