@@ -14,6 +14,8 @@ public class NumerosFelizesTestDrive {
       System.out.println(teste.separaNumero(123));
       System.out.println("Deve retornar 1, 4 e 9");
       System.out.println(teste.aoQuadrado(teste.separaNumero(123)));
+      System.out.println("Deve retornar 14");
+      System.out.println(teste.somaTudo(teste.aoQuadrado(teste.separaNumero(123))));
       
     }
 }

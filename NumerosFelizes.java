@@ -38,4 +38,17 @@ class NumerosFelizes {
 
   	}
 
+  	public int somaTudo(ArrayList<Integer> args){
+
+
+  		ArrayList<Integer> resultado = new ArrayList<Integer>();
+  		int somatorio = 0;
+  		//ronnie não deixou colar
+  		for(int i = 0; i < args.size(); i++){
+  			somatorio = somatorio + args.get(i);
+  		}
+  		return somatorio;
+
+  	}
+
 }
