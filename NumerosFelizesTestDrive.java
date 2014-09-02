@@ -1,9 +1,11 @@
+import java.util.*;
+
 public class NumerosFelizesTestDrive {
     public static void main(String[] args)
     {
       NumerosFelizes teste = new NumerosFelizes();
 //      System.out.println("\nTrue:");
-      System.out.println(teste.DividirNum(2034));
+        System.out.println(Arrays.toString(teste.DividirNum(2034)));
 //      System.out.println("\nTrue:");
 //      System.out.println(teste.eFeliz(13));
 //      System.out.println("\nFalse:");
