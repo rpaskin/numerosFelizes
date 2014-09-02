@@ -20,9 +20,5 @@ public class NumerosFelizesTestDrive {
 
       System.out.println("\nFalse para 3:");
       System.out.println(teste.eFeliz(3,0));
-
-
-
-      
     }
 }

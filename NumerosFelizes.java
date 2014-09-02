@@ -2,17 +2,39 @@ import java.util.*;
 
 class NumerosFelizes {
   	public boolean eFeliz(int args, int safe){
-  		if (safe > 100){
+		if (safe > 1000){
   			return false;
   		}
+  		int[] resultadosPrevios = new int [100];
+		
+		int soma = somaTudo(aoQuadrado(separaNumero(args)));
 
-  		int soma = somaTudo(aoQuadrado(separaNumero(args)));
-  		if (soma == 1){
-  			return true;
-  		}
-  		safe++;
-  		return eFeliz(soma, safe);
-  	}
+		if(soma == 1){
+			return true;	
+		}
+		for(int i = 0; i < resultadosPrevios.length; i++){
+			
+			resultadosPrevios[i] = soma;
+			soma = somaTudo(aoQuadrado(separaNumero(soma)));
+			if(soma == resultadosPrevios[i]){
+				
+				return false;
+			}
+		}
+		safe++;
+		return eFeliz(soma,safe);
+	}
+	// if (safe > 1000){
+  	// 		return false;
+  	// 	}
+
+  	// 	int soma = somaTudo(aoQuadrado(separaNumero(args)));
+  	// 	if (soma == 1){
+  	// 		return true;
+  	// 	}
+  	// 	safe++;
+  	// 	return eFeliz(soma, safe);
+  	// }*/
   	
 
   	public ArrayList<Integer> separaNumero(int args){
