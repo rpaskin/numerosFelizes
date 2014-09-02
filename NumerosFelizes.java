@@ -15,7 +15,7 @@ class NumerosFelizes {
   		int[] test={args};
   		ArrayList<Integer> test2 = new ArrayList<Integer>();
 
-
+  		
 		for(int i = test.length -1; i >= 0; i--){
     		int temp = test[i];
     		while(temp>0){
@@ -24,6 +24,18 @@ class NumerosFelizes {
     		}
 		}
 		return test2;
+  	}
+
+  	public ArrayList<Integer> aoQuadrado(ArrayList<Integer> args){
+  		
+  		ArrayList<Integer> resultado = new ArrayList<Integer>();
+
+  		//ronnie não deixou colar
+  		for(int i = 0; i < args.length; i++){
+  			resultado.add(args[i]*args[i]);
+  		}
+  		return resultado;
+
   	}
 
 }
